@@ -1,0 +1,4 @@
+module-info.class
+com\mycompany\enteros\PrimaryController.class
+com\mycompany\enteros\App.class
+com\mycompany\enteros\SecondaryController.class

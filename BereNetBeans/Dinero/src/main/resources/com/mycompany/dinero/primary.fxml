@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.dinero.PrimaryController">
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+    <children>
+        <Label text="Desglose de dinero">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        
+        <!-- Fila de entrada -->
+        <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                <Label text="Dinero:" />
+                <TextField fx:id="txtDinero" prefWidth="100.0" />
+                <Button fx:id="btnBorrar" mnemonicParsing="false" onAction="#Borrar" text="X" />
+                <Button fx:id="btnDesglosar" mnemonicParsing="false" onAction="#Desglosar" text="Desglosar" />
+            </children>
+        </HBox>
+        
+        <!-- Resultados ordenados -->
+        <HBox alignment="CENTER" spacing="30.0">
+            <children>
+                <VBox spacing="3.0">
+                    <children>
+                        <Label text="Billetes de $500" />
+                        <Label text="Billetes de $200" />
+                        <Label text="Billetes de $100" />
+                        <Label text="Billetes de $50" />
+                        <Label text="Billetes de $20" />
+                        <Label text="Monedas de $10" />
+                        <Label text="Monedas de $5" />
+                        <Label text="Monedas de $2" />
+                        <Label text="Monedas de $1" />
+                    </children>
+                </VBox>
+                <VBox spacing="3.0">
+                    <children>
+                        <Label fx:id="lbl500" text="0" />
+                        <Label fx:id="lbl200" text="0" />
+                        <Label fx:id="lbl100" text="0" />
+                        <Label fx:id="lbl50" text="0" />
+                        <Label fx:id="lbl20" text="0" />
+                        <Label fx:id="lbl10" text="0" />
+                        <Label fx:id="lbl5" text="0" />
+                        <Label fx:id="lbl2" text="0" />
+                        <Label fx:id="lbl1" text="0" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>
